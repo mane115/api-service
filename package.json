@@ -1,0 +1,42 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@types/fs-promise": "^1.0.3",
+    "bluebird": "^3.5.0",
+    "events": "^1.1.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.0",
+    "lodash": "^4.17.4",
+    "log4js": "^1.1.1",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.10.4",
+    "mysql": "^2.13.0",
+    "net": "^1.0.2",
+    "node-uuid": "^1.4.8",
+    "redis": "^2.7.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.29",
+    "mongoose": "^4.10.4"
+  },
+  "scripts": {
+    "pretest": "tsc",
+    "test": "./node_modules/mocha/bin/mocha build/test",
+    "start": "node build/app.js",
+    "prestart": "tsc"
+  },
+  "author": "gh",
+  "license": "MIT"
+}
